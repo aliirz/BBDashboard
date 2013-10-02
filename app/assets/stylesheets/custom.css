@@ -18,46 +18,46 @@
 /*#push,
 #footer {
   height: 60px;
-}*/
+  }*/
 
-#footer{
-	/*background-color: #eee;*/
-	width:100%;
+  #footer{
+  	/*background-color: #eee;*/
+  	width:100%;
 
-position: absolute;
+  	position: absolute;
 
-height: 80px;
+  	height: 80px;
 
-clear:both;
+  	clear:both;
 
-top:100%;
-}
+  	top:100%;
+  }
 
-.well h2{
-	color: #FFFFFF;
-}
+  .well h2{
+  	color: #FFFFFF;
+  }
 
-.centerThis{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
+  .centerThis{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center;
+  }
 
-.well a{
-	text-decoration: none;
-	color: #3498db
-}
+  .well a{
+  	text-decoration: none;
+  	color: #3498db
+  }
 
-.rightAlign{
-	text-align: right;
-}
+  .rightAlign{
+  	text-align: right;
+  }
 
-.center { float: none; margin-left: auto; margin-right: auto; }
+  .center { float: none; margin-left: auto; margin-right: auto; }
 
-.centered-pills { text-align:center; }
-.centered-pills ul.nav-pills { display:inline-block; }
-.centered-pills li { display:inline; }
-.centered-pills a { float:left; }
-* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+  .centered-pills { text-align:center; }
+  .centered-pills ul.nav-pills { display:inline-block; }
+  .centered-pills li { display:inline; }
+  .centered-pills a { float:left; }
+  * html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
 *+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
