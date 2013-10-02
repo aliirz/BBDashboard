@@ -15,14 +15,13 @@
 
 }
 
+#push,
+#footer {
+  height: 60px;
+}
+
 #footer{
-	position:absolute;
-	bottom:0;
-	width:100%;
-	height:30px;   /* Height of the footer */
-	background:#363636;
-	color: #FFFFFF;
-	text-align: center;
+	background-color: #eee;
 }
 
 .well h2{
@@ -44,3 +43,5 @@
 .rightAlign{
 	text-align: right;
 }
+
+.center { float: none; margin-left: auto; margin-right: auto; }
