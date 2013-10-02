@@ -18,9 +18,11 @@ class ProfitPilot.Routers.Dashboard extends Backbone.Router
 		view = new ProfitPilot.Views.DashboardIndex()
 		$('#content').html(view.render().el)
 	people: ->
-		alert 'people here'
+		peopleView = new ProfitPilot.Views.PeopleIndex()
+		$('#content').html(peopleView.render().el)
 	estimates: ->
-		alert 'estimates'
+		estimatesView = new ProfitPilot.Views.EstimatesIndex()
+		$('#content').html(estimatesView.render().el)
 	projects: ->
 		# alert 'test'
 		projectsView = new ProfitPilot.Views.ProjectsIndex(collection: @collection)
@@ -30,8 +32,11 @@ class ProfitPilot.Routers.Dashboard extends Backbone.Router
 		$('#content').html(projectCreateView.render().el)
 		# alert 'adding a new project are we?'
 	costings: ->
-		alert 'costings'
+		costingsView = new ProfitPilot.Views.CostingsIndex()
+		$('#content').html(costingsView.render().el)
 	calendar: ->
-		alert 'calendar'
+		calendarView = new ProfitPilot.Views.CalendarIndex()
+		$('#content').html(calendarView.render().el)
 	settings: ->
-		alert 'settings'
+		settingsView = new ProfitPilot.Views.SettingsIndex()
+		$('#content').html(settingsView.render().el)

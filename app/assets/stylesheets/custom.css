@@ -20,8 +20,8 @@
   height: 60px;
   }*/
 
-  #footer{
-  	/*background-color: #eee;*/
+/*  #footer{
+  	background-color: #eee;
   	width:100%;
 
   	position: absolute;
@@ -31,33 +31,61 @@
   	clear:both;
 
   	top:100%;
+    }*/
+
+    html, body {
+      height: 100%;
+    }
+
+    #push{
+      height: 200px;
+    }
+    #footer {
+      height: 30px;
+    }
+    #footer {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+
+    #footer p{
+     text-align: center;
+   }
+
+   @media (max-width: 767px) {
+    #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   .well h2{
-  	color: #FFFFFF;
-  }
+   color: #FFFFFF;
+ }
 
-  .centerThis{
-  	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	text-align: center;
-  }
+ .centerThis{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
 
-  .well a{
-  	text-decoration: none;
-  	color: #3498db
-  }
+ .well a{
+   text-decoration: none;
+   color: #3498db
+ }
 
-  .rightAlign{
-  	text-align: right;
-  }
+ .rightAlign{
+   text-align: right;
+ }
 
-  .center { float: none; margin-left: auto; margin-right: auto; }
+ .center { float: none; margin-left: auto; margin-right: auto; }
 
-  .centered-pills { text-align:center; }
-  .centered-pills ul.nav-pills { display:inline-block; }
-  .centered-pills li { display:inline; }
-  .centered-pills a { float:left; }
-  * html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+ .centered-pills { text-align:center; }
+ .centered-pills ul.nav-pills { display:inline-block; }
+ .centered-pills li { display:inline; }
+ .centered-pills a { float:left; }
+ * html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
 *+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */

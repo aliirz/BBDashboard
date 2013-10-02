@@ -49,7 +49,24 @@
 			In Progress
 		</td>
 		<td>
-			<i class="icon-cog"></i>
+			<div class="btn-group">
+				<a class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<i class="icon-cog"></i>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#editProject/<%= project.get('id') %>"><i class="icon-edit"></i> Edit</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="icon-file-text"></i> Summary</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="icon-download-alt"></i> Archive</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="icon-file-text"></i> Contract</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="icon-check"></i> Mark as complete</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+				</ul>
+			</div>
 		</td>
 	</tr>
 	<% end %>
