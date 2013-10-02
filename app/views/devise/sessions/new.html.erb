@@ -1,7 +1,8 @@
 <div class="col-md-6 col-md-offset-3">
 	<div class="well">
-		<h2>Sign in</h2>
 
+		<p class="rightAlign">Not a member? <%= link_to "Sign up", new_registration_path(resource_name) %></p>
+		<br />
 		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 		<div class="input-group input-group-lg">
 			<span class="input-group-addon"><i class="icon-user"></i></span>
@@ -12,15 +13,21 @@
 			<span class="input-group-addon"><i class="icon-lock"></i></span>
 			<input type="password" class="form-control input-lg" name="user[password]" placeholder="Password">
 		</div>
+		<br />
+		<div class="row">
+			<%= link_to "Forgot your password?", new_password_path(resource_name), :class => "centerThis" %>
+		</div>
+		<br />
 		<div>
 			<% if devise_mapping.rememberable? -%>
 			<div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
 			<% end -%>
-			<input type="submit" value="Sign In" class="btn btn-primary"/>
+			<br />
+			<input type="submit" value="Sign In" class="btn btn-primary centerThis "/>
 			<div><%#= f.submit "Sign in" %></div>
 			<% end %>
 
-			<%= render "devise/shared/links" %>
+			<%#= render "devise/shared/links" %>
 		</div>
 	</div>
 </div>

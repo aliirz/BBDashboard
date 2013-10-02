@@ -4,6 +4,15 @@
 	font-weight: 400;
 	font-family: 'Pacifico', cursive;
 	padding-bottom: 20px;
+	color: #c0392b;
+}
+
+.headerLogo .profit{
+
+}
+
+.headerLogo .pilot{
+
 }
 
 #footer{
@@ -18,4 +27,20 @@
 
 .well h2{
 	color: #FFFFFF;
+}
+
+.centerThis{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.well a{
+	text-decoration: none;
+	color: #3498db
+}
+
+.rightAlign{
+	text-align: right;
 }
