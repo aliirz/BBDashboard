@@ -3,7 +3,7 @@
 		<p class="rightAlign">Already a member? <%= link_to "Sign in", new_session_path(resource_name) %></p>
 		<br />
 		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-		<%#= devise_error_messages! %>
+		<%= devise_error_messages! %>
 		<div class="input-group input-group-lg">
 			<span class="input-group-addon"><i class="icon-envelope"></i></span>
 			<input type="text" class="form-control input-lg" name="user[email]" placeholder="Email">
