@@ -78,7 +78,6 @@ production:
   sessions: 
     default: 
       uri: <%= ENV['MONGOLAB_URI'] %>
-      database: profit_pilot_production
       options:
         safe: true
         skip_version_check: true
