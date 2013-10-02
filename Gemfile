@@ -52,6 +52,8 @@ gem 'backbone-on-rails'
 gem 'devise'
 
 
+gem 'rails_12factor', group: :production
+
 gem 'protected_attributes'
 
 # Use ActiveModel has_secure_password
