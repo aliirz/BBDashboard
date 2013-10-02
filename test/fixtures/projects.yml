@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  client: MyString
+  amount: 9.99
+  start: 2013-10-02
+  end: 2013-10-02
+  description: MyText
+
+two:
+  name: MyString
+  client: MyString
+  amount: 9.99
+  start: 2013-10-02
+  end: 2013-10-02
+  description: MyText

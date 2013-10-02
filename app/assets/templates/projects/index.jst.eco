@@ -1,1 +1,33 @@
-<h1>Projects will be here</h1>
+<h1>Projects</h1>
+<%= @projects.length %>
+<table class="table">
+	<tr>
+		<th>
+			Project
+		</th>
+		<th>
+			Client
+		</th>
+		<th>
+			Amount
+		</th>
+		<th>
+			Start Date
+		</th>
+		<th>
+			Due Date
+		</th>
+		<th>
+			Status
+		</th>
+		<th>
+		</th>
+	</tr>
+	<% for project in @projects.models: %>
+	<tr>
+		<td>
+			<%= project.get('name') %>
+		</td>
+	</tr>
+	<% end %>
+</table>

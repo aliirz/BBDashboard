@@ -8,6 +8,10 @@ class ProfitPilot.Routers.Dashboard extends Backbone.Router
 		'calendar' : 'calendar'
 		'settings' : 'settings'
 
+	initialize: ->
+		@collection = new ProfitPilot.Collections.Projects()
+		@collection.fetch()
+
 	index: ->
 		view = new ProfitPilot.Views.DashboardIndex()
 		$('#content').html(view.render().el)
@@ -17,7 +21,7 @@ class ProfitPilot.Routers.Dashboard extends Backbone.Router
 		alert 'estimates'
 	projects: ->
 		# alert 'test'
-		projectsView = new ProfitPilot.Views.ProjectsIndex()
+		projectsView = new ProfitPilot.Views.ProjectsIndex(collection: @collection)
 		$('#content').html(projectsView.render().el)
 	costings: ->
 		alert 'costings'
