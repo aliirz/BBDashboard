@@ -6,4 +6,5 @@ class Project
   field :start, type: Date
   field :end, type: Date
   field :description, type: String
+
 end

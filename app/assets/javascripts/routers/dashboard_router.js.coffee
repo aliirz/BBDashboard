@@ -4,9 +4,11 @@ class ProfitPilot.Routers.Dashboard extends Backbone.Router
 		'people' : 'people'
 		'estimates' : 'estimates'
 		'projects' : 'projects'
+		'addproject': 'addProject'
 		'costings' : 'costings'
 		'calendar' : 'calendar'
 		'settings' : 'settings'
+
 
 	initialize: ->
 		@collection = new ProfitPilot.Collections.Projects()
@@ -23,6 +25,10 @@ class ProfitPilot.Routers.Dashboard extends Backbone.Router
 		# alert 'test'
 		projectsView = new ProfitPilot.Views.ProjectsIndex(collection: @collection)
 		$('#content').html(projectsView.render().el)
+	addProject: ->
+		projectCreateView =  new  ProfitPilot.Views.ProjectsCreate(collection: @collection)
+		$('#content').html(projectCreateView.render().el)
+		# alert 'adding a new project are we?'
 	costings: ->
 		alert 'costings'
 	calendar: ->

@@ -1,0 +1,71 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<strong>New Project</strong>
+	</div>
+	<div class="panel-body">
+		<form role="form" id="new_project">
+			<div class="row">
+				<div class="col-md-2">
+					<label>Estimate</label>
+				</div>
+				<div class="col-md-4">
+					<select name="estimate" id="estimateSelect" class="form-control">
+						<option value="Test Estimate">Estimate 1</option>
+					</select>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<!-- 			<div class="col-md-6"> -->
+				<div class="col-md-2">
+					<label>Project</label>
+				</div>
+				<div class="col-md-4">
+					<input placeholder="Name" name="name" id="projectName" class="form-control" type="text"/>
+				</div>
+				<div class="col-md-2">
+					<label>Client</label>
+				</div>
+				<div class="col-md-4">
+					<select name="client" id="clientSelect" class="form-control">
+						<option value="Test Client">Client 1</option>
+					</select>
+				</div>
+				<!-- </div> -->
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-2">
+					<label>
+						Start Date
+					</label>
+				</div>
+				<div class="col-md-4">
+					<input type="text" name="start" id="startDate"  placeholder="Select" class="form-control" data-behaviour='datepicker'>
+				</div>
+				<div class="col-md-2">
+					<label>
+						End Date
+					</label>
+				</div>
+				<div class="col-md-4">
+					<input type="text" name="end" id="endDate" placeholder="Select" class="form-control" data-behaviour='datepicker'>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-2">
+					<label>Description</label>
+				</div>
+				<div class="col-md-9">
+					<textarea name="description" id="notes" class="form-control" placeholder="Add Notes Here" rows="3"></textarea>
+				</div>
+			</div>
+			<br />
+			<button type="submit" class="btn btn-primary centerThis">Save</button>
+		</form>
+	</div>
+</div>
+<script>
+$("[data-behaviour~=datepicker]").datepicker()
+</script>

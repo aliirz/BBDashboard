@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/Nerian/bootstrap-datepicker-rails.git
+  revision: 42579640e693f832bdffd507041644f9d93a624a
+  specs:
+    bootstrap-datepicker-rails (1.1.1.8)
+      railties (>= 3.0)
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: dc5536d3aaf92ad04ea215bcfb42dbf62139da60
   branch: bootstrap3
@@ -107,6 +114,8 @@ GEM
     origin (1.1.0)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
+    protected_attributes (1.0.3)
+      activemodel (>= 4.0.0, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -166,6 +175,7 @@ PLATFORMS
 
 DEPENDENCIES
   backbone-on-rails
+  bootstrap-datepicker-rails!
   bson_ext
   coffee-rails (~> 4.0.0)
   devise
@@ -173,6 +183,7 @@ DEPENDENCIES
   jquery-rails
   less-rails
   mongoid!
+  protected_attributes
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc

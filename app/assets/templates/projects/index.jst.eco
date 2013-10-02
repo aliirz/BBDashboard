@@ -1,5 +1,8 @@
-<h1>Projects</h1>
-<%= @projects.length %>
+<div class="panel panel-default">
+	<div class="panel-body">
+		Projects<a href="#addproject" class="pull-right"><i class="icon-plus-sign"></i></a>
+	</div>
+</div>
 <table class="table">
 	<tr>
 		<th>
@@ -26,7 +29,27 @@
 	<% for project in @projects.models: %>
 	<tr>
 		<td>
-			<%= project.get('name') %>
+			<p>
+				<a href=""><%= project.get('name') %></a>
+			</p>
+		</td>
+		<td>
+			<%= project.get('client') %>
+		</td>
+		<td>
+			$<%= project.get('amount') %>
+		</td>
+		<td>
+			<%= project.get('start') %>
+		</td>
+		<td>
+			<%= project.get('end') %>
+		</td>
+		<td>
+			In Progress
+		</td>
+		<td>
+			<i class="icon-cog"></i>
 		</td>
 	</tr>
 	<% end %>
