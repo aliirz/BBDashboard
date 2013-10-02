@@ -15,13 +15,22 @@
 
 }
 
-#push,
+/*#push,
 #footer {
   height: 60px;
-}
+}*/
 
 #footer{
-	background-color: #eee;
+	/*background-color: #eee;*/
+	width:100%;
+
+position: absolute;
+
+height: 80px;
+
+clear:both;
+
+top:100%;
 }
 
 .well h2{
